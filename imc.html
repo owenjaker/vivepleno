@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/univers.css">
+    <link rel="stylesheet" href="../css/imc.css">
+</head>
+<body>
+    <header>
+        Vive Pleno      
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="imc.html">IMC</a></li>
+            <li><a href="piel.html">Piel</a></li>
+            <li><a href="calorias.html">Calorias</a></li>
+            <li><a href="ejercicio.html">Ejercicio</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <h2>Calcula tu IMC</h2>
+
+    <div class="calculadora">
+        
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" placeholder="Introduce tu altura" required>
+
+        <br>
+
+           <label for="peso">Peso (Kg):</label>
+        <input type="number" id="peso" placeholder="Introduce tu peso" required>
+
+        <br>
+        <button onclick="calcularIMC()">Calcular</button>
+    </div>
+
+    <p class="resultado"></p>
+
+    <p id="pesobajo" class="hide">Tu IMC indica que estás por debajo del peso recomendado para tu estatura. Esto podría estar relacionado con una alimentación insuficiente, un metabolismo acelerado o alguna condición médica. Te recomendamos consultar a un profesional de la salud para una evaluación adecuada y asegurarte de que estás recibiendo los nutrientes que tu cuerpo necesita.</p>
+    
+     <p id="pesonormal" class="hide">¡Bien hecho! Tu IMC está dentro del rango saludable. Esto indica que tu peso es adecuado para tu estatura. Sigue manteniendo una alimentación balanceada y un estilo de vida activo para conservar tu bienestar físico y mental.</p>
+
+      <p id="sobrepeso" class="hide">Tu IMC indica que estás en un rango de sobrepeso. Esto no siempre significa un problema grave, pero puede ser un buen momento para revisar tus hábitos alimenticios y nivel de actividad física. Pequeños cambios pueden marcar una gran diferencia a largo plazo.</p>
+
+       <p id="oyegelda" class="hide">Oye, Gelda… tu IMC indica obesidad, lo que puede aumentar el riesgo de enfermedades como diabetes, hipertensión y problemas cardiovasculares. No es momento de alarmarse, pero sí de actuar. Consultar con un profesional de la salud puede ayudarte a crear un plan personalizado para mejorar tu bienestar.</p>
+
+   <audio id="oyegela" src="../oye-gela-escuchate-esto-saturado.mp3"></audio>
+<img class="gela" id="alertaimg" src="../img/alerta.png" alt="imagen">
+
+    <script src="../js/imc.js"></script>
+</body>
+</html>

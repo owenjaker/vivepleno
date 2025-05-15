@@ -1,0 +1,114 @@
+body {
+    justify-content: center;
+    align-items: center;
+    scrollbar-width: 909px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.resultado {
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #f4e9cd;
+}
+
+#pesobajo {
+    background-color: #468189;
+}
+
+#pesonormal {
+    background-color: #88A09E;
+}
+
+#sobrepeso {
+    background-color: #c7a27c;
+}
+
+#oyegelda {
+    background-color: #a14545;
+}
+
+.calculadora {
+    margin-left: 40%;
+    margin-right: 40%;
+    justify-content: center;
+    background-color: #77aca2;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 0 50px rgba(126, 239, 247, 0.614);
+    display: grid;
+}
+
+
+label {
+    font-size: 120%;
+}
+input {
+    padding: 7%;
+    border-radius: 10px;
+
+}
+
+input:focus {
+    background-color: #f0f0f0;
+}
+button {
+    border-radius: 50px;
+    display: fixed;
+    padding: 3%;
+    background-color: black;
+    color: #77aca2;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.821);
+    color: #77aca2f5;
+}
+
+.gela {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90vmin;
+    height: 90vmin;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1000;
+    animation: girar 5s linear infinite;
+    display: none;
+}
+
+
+
+/* Gira sin perder el centrado */
+@keyframes girar {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+.girar {
+    animation: girar 2s linear infinite;
+}
+
+h2 {
+    color: #F4E9CD;
+    text-align: center;
+}
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}

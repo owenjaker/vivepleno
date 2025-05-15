@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #9DBEBB;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    text-align: center;
+    width: 100vw;
+}
+
+body {
+    background-color: #031926;
+}
+
+h1 {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    background-image: url(/img/ola.svg);
+}
+
+nav {
+    background-color: #f4e9cd;
+    padding: 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+ 
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border-right: 1px solid #ccc; /* Línea delgada entre ítems */
+}
+
+
+
+/* Separador entre los <li> excepto el último */
+nav ul li:not(:last-child) {
+    border-right: 1px solid #ccc; /* Línea fina separadora */
+}
+
+/* Elimina línea del último */
+nav ul li:last-child {
+    border-right: none;
+}
+
+/* Estilo para que el enlace cubra toda la cajita del li */
+nav ul li a {
+    display: block; /* <-- hace que el enlace llene todo el <li> */
+    padding: 15px 30px;
+    color: #468189;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover total */
+nav ul li a:hover {
+    background-color: #031926;
+    color: #f4e9cd;
+}
+
+
+nav ul li:hover a {
+    color: #f4e9cd;
+}
+
+th {
+    padding: 3px;
+    background-color: rgba(250, 235, 215, 0.692);
+}
+
+td {
+    background-color: rgba(101, 26, 124, 0.24);
+}
+
+p {
+    text-align: justify;
+    padding: 15px;
+}
